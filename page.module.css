@@ -1,0 +1,230 @@
+.container {
+    font-family: sans-serif;
+    background: #f1f3f6;
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2874f0;
+    padding: 1rem 2rem;
+    color: white;
+  }
+  
+  .search {
+    flex: 1;
+    margin: 0 2rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    max-width: 500px;
+    font-size: 1rem;
+  }
+  
+  .authButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login,
+  .signup {
+    background-color: white;
+    color: #2874f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .login:hover,
+  .signup:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Banner */
+  .banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Product Grid */
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: #333;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 16px rgba(0,0,0,0.1);
+  }
+  
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: 300px;
+  }
+  
+  .image {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 0.8rem;
+  }
+  
+  .button {
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+  
+  .button:hover {
+    background-color: #0c5adb;
+  }
+  
+  .profile {
+    background-color: white;
+    color: #2874f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form input {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .form button {
+    padding: 0.7rem;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .switch {
+    color: #2874f0;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  /* Make entire text color black */
+.container {
+    color: black;
+  }
+  
+  /* If any text was explicitly white, override it */
+  .navbar,
+  .login,
+  .signup,
+  .profile,
+  .button,
+  .switch {
+    color: black !important;
+  }
+  
+  /* Optional: If buttons have white text and blue background, keep contrast */
+  .button {
+    background-color: #f0f0f0;
+    border: 1px solid #2874f0;
+    color: black !important;
+  }
+  
+  .login,
+  .signup {
+    background-color: white;
+    color: black !important;
+  }
+  
+  .form button {
+    background-color: #f0f0f0;
+    color: black !important;
+    border: 1px solid #2874f0;
+  }
+  
+  
